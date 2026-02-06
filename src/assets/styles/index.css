@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex items-center justify-center
+}
+
+#moodstack-app {
+  @apply flex items-center flex-col bg-gray-100 h-full w-5/12 p-5 min-w-96
+}
+
+.h1 {
+  @apply text-4xl font-extrabold text-gray-900 tracking-tighter p-5 mb-5;
+}
+
