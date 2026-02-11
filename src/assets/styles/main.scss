@@ -1,0 +1,89 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #111827;
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+}
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #111827;
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+}
+
+body {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  color: #111827;
+  font-size: 1rem /* 16px */;
+  line-height: 1.5rem /* 24px */;
+}
+
+/* input type number 화살표 없애기 */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+/** Google Icons **/
+.material-symbols-outlined {
+  font-size: 20px !important;
+  cursor: pointer;
+}
+
+/** FullCalendar **/
+.fc-today-button {
+  background-color: #9ca3af !important;
+  border: #9ca3af !important;
+}
+
+.fc-today-button:hover {
+  background-color: #111827 !important;
+}
+
+.fc-button-group button {
+  background-color: #fff !important;
+  border-color: #fff !important;
+  color: #111827;
+}
+
+.fc-button-group button:hover {
+  background-color: #9ca3af !important;
+  border: #9ca3af !important;
+}
+
+.fc-event-main {
+  border-radius: 10%;
+}
+
+.fc-event.fc-event-start.fc-event-end.fc-daygrid-event.fc-h-event {
+  background-color: #9ca3af !important;
+  border: none !important;
+}
+
+/** todos **/
+.done {
+  input {
+    accent-color: #9ca3af;
+  }
+  span {
+    color: #9ca3af;
+  }
+  span:first-of-type{
+    text-decoration: line-through #9ca3af;
+  }
+}

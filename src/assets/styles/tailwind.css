@@ -1,0 +1,230 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply flex items-center justify-center
+}
+
+#moodstack-app {
+  @apply flex items-center flex-col bg-gray-100 h-full w-5/12 p-5 min-w-96
+}
+
+.h1 {
+  @apply text-4xl font-extrabold text-gray-900 tracking-tighter p-5 mb-5;
+}
+
+.card {
+  @apply w-full mb-7;
+}
+
+.card-header {
+  @apply flex items-center justify-between bg-transparent;
+}
+
+.card-body {
+  @apply relative min-h-52 bg-white rounded-xl rounded-tl-none overflow-x-scroll;
+}
+
+.card-body::-webkit-scrollbar {
+  @apply hidden;
+}
+
+.card-title {
+  @apply bg-gray-900 py-2 px-6 rounded-tr-2xl text-white;
+}
+
+.card-btns {
+  @apply text-gray-900 pr-3;
+}
+
+/** Todo **/
+.todo-card-body {
+  @apply p-7 flex flex-col max-h-52;
+}
+
+.todo {
+  @apply flex gap-3 p-0.5;
+}
+
+.todo div{
+  @apply ml-auto;
+}
+
+.add-todo-div input {
+  @apply border-none outline-none caret-black;
+}
+
+.todo-title {
+  @apply cursor-default;
+}
+
+
+.todo-title:focus {
+  @apply border-none outline-none caret-transparent;
+}
+
+.add-todo-div #todo-title {
+  @apply w-full border-none bg-gray-100;
+}
+
+.add-todo-btns {
+  @apply flex justify-center items-center;
+}
+
+.add-todo-btns span {
+  @apply rounded-md;
+}
+
+.add-todo-btns span:hover {
+  @apply bg-gray-100;
+}
+
+
+/** diary **/
+.diary-card-body {
+  @apply p-7 flex justify-start items-center gap-3 ;
+}
+
+.diary {
+  @apply flex flex-col bg-gray-200 rounded-3xl min-w-40 min-h-48 max-h-48 p-3 overflow-x-hidden;
+}
+
+.diary-btns {
+  @apply text-right flex justify-end items-center pr-1 mt-auto;
+}
+
+.diary-content {
+  @apply overflow-x-hidden mb-auto;
+}
+
+.diary-content-textarea {
+  @apply h-40 resize-none max-w-full overflow-y-hidden overflow-x-hidden outline-none border-none;
+}
+
+.diary-content-phrase {
+  @apply break-words;
+}
+
+.add-diary-div .diary-btns {
+  @apply m-0;
+}
+
+/* challenge */
+
+.challenge-card-body {
+  @apply p-7 flex justify-start items-center gap-6;
+}
+
+
+.challenge {
+  @apply flex flex-col gap-3 items-center justify-center p-1 rounded-3xl bg-gray-200 min-w-60 min-h-48 max-h-48;
+}
+
+.challenge-info {
+  @apply w-full flex pl-5 pr-1 items-center;
+}
+
+.challenge-info .delete-challenge{
+  @apply ml-auto;
+}
+
+.challenge-amount {
+  @apply overflow-y-hidden;
+}
+
+.challenge-contents{
+  @apply flex mb-auto items-center justify-end gap-1;
+}
+
+.challenge-charts {
+  @apply min-w-28;
+}
+
+.chart {
+  @apply w-36;
+}
+
+.challenge-btns {
+  @apply flex flex-col justify-end items-center;
+}
+
+.challenge-btn {
+  @apply px-1 pt-1.5 w-10 h-10;
+}
+
+
+/* 먼슬리 */
+
+.monthly-card-body {
+  @apply p-7;
+}
+
+.monthly {
+  @apply bg-gray-200 relative rounded-2xl p-5 overflow-hidden;
+}
+
+#monthly-container .card-body {
+  overflow: visible !important;
+}
+
+
+/* 캘린더 모달 */
+#calendar {
+  @apply min-h-[500px] w-full overflow-y-hidden;
+}
+
+#calendar-modal-wrapper {
+  @apply absolute inset-0 flex justify-center items-center bg-black/40 z-50;
+}
+
+#calendar-modal {
+  @apply bg-white p-6 rounded-2xl shadow-xl flex flex-col gap-3;
+}
+
+#calendar-modal-box {
+  @apply bg-white p-6 rounded-2xl shadow-xl flex flex-col gap-3 relative;
+}
+
+#calendar-modal-box .btns button{
+  @apply bg-gray-100 py-1 px-2 rounded-md;
+}
+
+.fc-button:focus {
+  @apply !outline-none !shadow-none;
+}
+
+.fc-daygrid-day-top a {
+  @apply cursor-pointer;
+}
+.fc-daygrid-event-harness {
+  @apply cursor-pointer;
+}
+
+#setting-modal {
+  @apply fixed flex h-3/4 w-1/2 bg-white border-2 border-solid rounded-xl z-40;
+}
+
+#setting-container {
+  @apply flex flex-col justify-start items-center h-full w-full;
+}
+
+#setting-btn {
+  @apply fixed bottom-10 right-80 w-16 h-16 rounded-full bg-black flex items-center justify-center cursor-pointer;
+}
+
+#setting-btn span {
+  @apply text-white !text-4xl;
+}
+
+#login-container {
+  @apply flex flex-col gap-2 h-1/2 w-1/2 justify-center items-center;
+}
+
+#join-modal {
+  @apply flex flex-col justify-start items-center absolute w-1/2 h-1/2 rounded-xl bg-white z-50;
+}
+
+#join-container {
+  @apply flex flex-col justify-start items-center h-full w-full;
+}

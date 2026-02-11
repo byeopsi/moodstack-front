@@ -1,6 +1,6 @@
 import TodoList from "./TodoList";
 
-const TodoContainer = ({showInputForm, todos, addTodo, saveTodo}) => {
+const TodoContainer = ({todos, addTodo, saveTodo, editTodo}) => {
   return (
     <div id="todo-container" className="card">
       <div className="card-header">
@@ -18,8 +18,9 @@ const TodoContainer = ({showInputForm, todos, addTodo, saveTodo}) => {
         </div>
       </div>
       <div className="card-body todo-card-body">
-        {/* showInputForm이 true면 아래가 보이고... false면 안 보이게 */}
-        <TodoList todos={todos} saveTodo={saveTodo} />
+        <ul id="todos">
+          <TodoList todos={todos} saveTodo={saveTodo} editTodo={editTodo}/>
+        </ul>
       </div>
     </div>
   )

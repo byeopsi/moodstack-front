@@ -1,9 +1,9 @@
 import TodoItem from "./TodoItem";
-const TodoList = ({todos, saveTodo}) => {
+const TodoList = ({todos, saveTodo, editTodo}) => {
   return (
-    <ul id="todos">
+    <ul>
       {todos.map((todo) => (
-        <TodoItem todo={todo} saveTodo={saveTodo} />
+        <TodoItem key={todo.id} todo={todo} saveTodo={saveTodo} editTodo={editTodo}/>
       ))}
     </ul>
   )
